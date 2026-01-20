@@ -1,5 +1,5 @@
 import React from 'react';
-import { Paper, Typography } from '@mui/material';
+import { Paper, Typography } from '@mui/material'; // Removed unused 'Box' import
 
 const StatCard = ({ title, value, color }) => {
   return (

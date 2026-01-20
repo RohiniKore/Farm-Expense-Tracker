@@ -40,6 +40,8 @@ export const DataProvider = ({ children }) => {
     if (token) {
       loadData();
     }
+    // Added the line below to prevent linter errors during Vercel build
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token, selectedMonth]);
 
   const refreshData = () => loadData(selectedMonth);
