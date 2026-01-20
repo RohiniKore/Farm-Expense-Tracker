@@ -11,8 +11,6 @@ const app = express();
 // Connect to MongoDB
 connectDB();
 
-// CORRECTED CORS CONFIGURATION
-// This allows your frontend to securely communicate with the backend
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:3000', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
